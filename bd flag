@@ -1,0 +1,41 @@
+import turtle                                    #import turtle
+bdg= turtle.Turtle()                             #name the green part
+bdg.color("green","green")                       #select color for pen and fill color
+bdg.penup()
+bdg.left(180)
+bdg.forward(200)                                 #by penup and down hide the pen
+bdg.left(90)                                     #and fixd the position for mange ratio
+bdg.forward(100)
+bdg.left(90)
+bdg.pendown()
+bdg.begin_fill()                                #fill the color begin and end
+
+for i in range(2):                              #use forloop to make rectanguler
+    bdg.forward(400)
+    bdg.left(90)
+    for j in range(1):
+        bdg.forward(240)
+        bdg.left(90)
+bdg.end_fill()
+bdg.hideturtle()                                #hide turtle
+
+bdl= turtle.Turtle()                            #name and define the red part
+bdl.color("red","red")
+bdl.penup()                                     #fixd the position to manage ratio
+bdl.left(180)
+bdl.forward(5)
+bdl.left(90)
+bdl.forward(55)
+bdl.left(90)
+bdl.pendown()
+
+bdl.begin_fill()
+bdl.circle(80)                                 #creat a circle and fill the color
+bdl.end_fill()
+
+bdl.hideturtle()
+turtle.done()
+
+
+
+            #thank you
